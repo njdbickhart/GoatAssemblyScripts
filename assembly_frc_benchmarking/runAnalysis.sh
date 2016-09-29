@@ -94,14 +94,6 @@ if [ ! -e ${PREFIX}_FRC.txt ]; then
    $FRC $PE --genome-size $GS --output ${PREFIX}
 fi
 
-# freebayes global params
-WEIGHT=0.5
-DIPLOID="-p 1 -F $WEIGHT"
-if [ -e diploid ]; then
-   WEIGHT=0.65
-   DIPLOID="-p 2 -F $WEIGHT"
-fi
-
 if [ ! -e $PREFIX.bayes.vcf ]; then
    echo "Running vcf"
    if [ ! -e map/$PREFIX.bam ]; then
@@ -132,7 +124,7 @@ if [ ! -e $PREFIX.bayes.vcf ]; then
    fi
    # get SNPs from illumina data
    samtools index map/$PREFIX.bam
-   $FREEBAYES -C 2 -0 -O -q 20 -z 0.02 -E 0 -X -u $DIPLOID -b map/$PREFIX.bam -v $PREFIX.bayes.vcf -f $ASM
+   $FREEBAYES -C 2 -0 -O -q 20 -z 0.02 -E 0 -X -u -p 1 -F 0.5 -b map/$PREFIX.bam -v $PREFIX.bayes.vcf -f $ASM
 
 fi
 
