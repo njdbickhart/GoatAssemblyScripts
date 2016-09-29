@@ -1,0 +1,19 @@
+• LOW_COV_PE: areas characterized by low read coverage (i.e., by default two times lower than the average
+read coverage computed from the alignment);
+• HIGH_COV_PE: areas characterized by high read coverage (i.e., by default two times higher than the
+average read coverage computed from the alignment)
+• LOW_NORM_COV_PE: areas characterized by low paired-read coverage (i.e., coverage computed only on
+correctly aligned paired reads, same default value as LOW_COV_PE);
+• HIGH_NORM_COV_PE: areas characterized by high paired-read coverage (i.e., coverage computed only on
+correctly aligned paired reads, same default value as HIGH_COV_PE);
+• COMPR_PE: areas characterized by low CE-statistics (i.e., default value set to -3, see CEmin and CEmax
+estimation section for more details);
+• STRECH_PE: areas characterized by high CE-statistics (i.e., default value set to 3, see CEmin and CEmax
+estimation section for more details);
+• HIGH_SINGLE_PE: areas characterized by high number of reads with unmapped pair (i.e., by default 0.4
+of the read coverage is composed by reads with unplaced pair);
+• HIGH_SPAN_PE: areas characterized by high number of reads with pair mapped in a different contig/scaffold
+(i.e., by default 0.4 of the read coverage is composed by reads with pair mapped in a
+different contig/scaffold);
+• HIGH_OUTIE_PE: areas characterized by high number of mis-oriented or too distant paired reads (i.e.,
+by default 0.4 of the read coverage is composed by mis-oriented reads);
