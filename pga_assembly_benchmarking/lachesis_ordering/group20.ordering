@@ -1,0 +1,78 @@
+# ContigOrdering file.  This file represents a ContigOrdering object, which describes an ordering of contigs within a Lachesis cluster.
+# See ContigOrdering.h for more documentation.
+#
+# Important numbers:
+#	N_contigs	69	(Number of contigs in the input cluster)
+#	N_contigs_used	67	(Number of contigs ordered by this ordering)
+#	has_Q_scores	1	(Boolean: has orientation quality scores?)
+#	has_gaps	0	(Boolean: have gap sizes between contigs been estimated?)
+#
+# Columns:
+#contig_ID(local)	contig_name	contig_rc	orientation_Q_score	gap_size_after_contig
+31	utg2927	1	0.486164	.
+6	Scaffold_1637.1	0	147.795	.
+10	Scaffold_637.1	0	56.9657	.
+41	utg9518	1	8.10261	.
+40	utg9289	0	6.9335	.
+39	utg9023	1	12.0789	.
+24	Scaffold_799.1	0	63.1733	.
+5	Scaffold_321.1	1	333.962	.
+25	Scaffold_20	0	66.8984	.
+34	utg4195	0	1.80579	.
+42	utg9873	0	6.21569	.
+51	utg50614	0	5.86187	.
+67	utg88221	0	1.3555	.
+59	utg57102	0	0.30053	.
+7	Scaffold_18.1	1	37.0256	.
+29	utg1954	1	1.01758	.
+26	Scaffold_56	1	522.348	.
+8	Scaffold_18.2	0	1671.43	.
+9	Scaffold_18.3	0	261.101	.
+16	Scaffold_25.2	1	814.332	.
+15	Scaffold_25.1	1	1202.56	.
+30	utg2093	1	8.78256	.
+44	utg30766	0	0.173463	.
+45	utg30767	0	1.76804	.
+43	utg29345	1	1.56505	.
+14	Scaffold_343.4	1	45.1723	.
+13	Scaffold_343.3	1	521.988	.
+12	Scaffold_343.2	1	24.353	.
+11	Scaffold_343.1	1	208.599	.
+4	Scaffold_447.5	1	13.4178	.
+3	Scaffold_447.4	1	386.304	.
+2	Scaffold_447.3	1	171.257	.
+37	utg5679	0	5.05035	.
+36	utg5053	1	0.921179	.
+68	utg103925	0	13.0471	.
+63	utg57231	0	14.0125	.
+60	utg57177	0	3.57942	.
+65	utg66264	0	0.48507	.
+57	utg56470	1	7.18727	.
+35	utg4766	1	3.24254	.
+1	Scaffold_447.2	0	4.82192	.
+58	utg56471	1	2.36337	.
+61	utg57192	1	0.361828	.
+54	utg56466	0	1.08921	.
+0	Scaffold_447.1	1	52.0684	.
+18	Scaffold_195.2	1	6.02186	.
+46	utg49386	1	1.23293	.
+47	utg50599	0	0.920394	.
+48	utg50602	1	0.697396	.
+17	Scaffold_195.1	1	11.2972	.
+38	utg5728	0	2.4464	.
+33	utg3992	1	15.2018	.
+64	utg60742	1	13.9803	.
+28	utg1951	1	0.47482	.
+19	Scaffold_195.3	0	27.0096	.
+20	Scaffold_195.4	1	0.328946	.
+53	utg56240	0	6.4107	.
+21	Scaffold_195.5	0	361.824	.
+22	Scaffold_479.1	0	76.4452	.
+23	Scaffold_479.2	1	6.11288	.
+27	Scaffold_3085	1	31.335	.
+49	utg50603	0	1.87783	.
+50	utg50604	0	3.49706	.
+32	utg3523	0	0	.
+56	utg56469	1	2.38741	.
+55	utg56468	1	0.0303802	.
+62	utg57202	1	1.58897	.

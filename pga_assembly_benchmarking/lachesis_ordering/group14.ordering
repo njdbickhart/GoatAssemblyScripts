@@ -1,0 +1,42 @@
+# ContigOrdering file.  This file represents a ContigOrdering object, which describes an ordering of contigs within a Lachesis cluster.
+# See ContigOrdering.h for more documentation.
+#
+# Important numbers:
+#	N_contigs	31	(Number of contigs in the input cluster)
+#	N_contigs_used	31	(Number of contigs ordered by this ordering)
+#	has_Q_scores	1	(Boolean: has orientation quality scores?)
+#	has_gaps	0	(Boolean: have gap sizes between contigs been estimated?)
+#
+# Columns:
+#contig_ID(local)	contig_name	contig_rc	orientation_Q_score	gap_size_after_contig
+15	utg701	0	3.66675	.
+16	utg703	0	3.03159	.
+10	Scaffold_8.2	1	18.1256	.
+25	utg2728	0	0.0258796	.
+20	utg1681	0	0	.
+0	Scaffold_1964.1	0	25.8878	.
+17	utg706	1	2.72032	.
+1	Scaffold_1964.2	0	227.975	.
+29	utg45452	0	18.5098	.
+2	Scaffold_1964.3	0	99.054	.
+13	Scaffold_1699	1	151.496	.
+9	Scaffold_8.1	1	721.615	.
+4	Scaffold_625.2	1	15.591	.
+3	Scaffold_625.1	1	22.3256	.
+27	utg9093	1	46.8204	.
+8	Scaffold_179.4	1	287.042	.
+26	utg3067	0	0.0408006	.
+6	Scaffold_179.2	0	28.7692	.
+7	Scaffold_179.3	0	68.1744	.
+24	utg2177	0	2.44856	.
+23	utg2168	1	10.7223	.
+21	utg2118	1	0.186086	.
+22	utg2136	1	2.37269	.
+28	utg23180	1	6.72819	.
+30	utg49493	1	0.302727	.
+5	Scaffold_179.1	1	496.722	.
+11	Scaffold_6.1	0	359.988	.
+12	Scaffold_6.2	0	3763.98	.
+14	Scaffold_2870	0	122.01	.
+18	utg1585	0	0	.
+19	utg1680	0	0	.

@@ -1,0 +1,67 @@
+# ContigOrdering file.  This file represents a ContigOrdering object, which describes an ordering of contigs within a Lachesis cluster.
+# See ContigOrdering.h for more documentation.
+#
+# Important numbers:
+#	N_contigs	56	(Number of contigs in the input cluster)
+#	N_contigs_used	56	(Number of contigs ordered by this ordering)
+#	has_Q_scores	1	(Boolean: has orientation quality scores?)
+#	has_gaps	0	(Boolean: have gap sizes between contigs been estimated?)
+#
+# Columns:
+#contig_ID(local)	contig_name	contig_rc	orientation_Q_score	gap_size_after_contig
+24	Scaffold_1911	0	894.333	.
+3	Scaffold_275.4	1	843.991	.
+36	utg4741	1	1.30827	.
+2	Scaffold_275.3	1	63.7461	.
+48	utg56081	1	11.7142	.
+35	utg4667	1	2.33904	.
+46	utg51691	1	0.615893	.
+1	Scaffold_275.2	0	26.6165	.
+37	utg5787	0	0.69685	.
+39	utg7512	1	1.31589	.
+0	Scaffold_275.1	1	804.11	.
+20	Scaffold_257.2	0	131.999	.
+9	Scaffold_11.3	0	198.443	.
+50	utg56227	1	15.4406	.
+49	utg56225	1	9.20009	.
+8	Scaffold_11.2	1	25.1697	.
+7	Scaffold_11.1	1	29.5967	.
+31	utg3789	0	4.68095	.
+19	Scaffold_257.1	1	21.8322	.
+29	utg2674	1	0.44621	.
+32	utg4185	1	1.50605	.
+14	Scaffold_3095.1	1	8.83797	.
+10	Scaffold_11.4	1	0.649105	.
+55	utg150388	1	0.0912395	.
+11	Scaffold_11.5	1	1.07894	.
+45	utg31079	1	0.890368	.
+44	utg31078	1	3.12633	.
+27	utg1795	0	0.629849	.
+43	utg31077	0	0.0199568	.
+38	utg7252	1	0.577562	.
+51	utg56369	0	1.65543	.
+52	utg56371	0	1.0804	.
+53	utg56374	0	6.25571	.
+54	utg56375	0	4.01857	.
+12	Scaffold_11.6	0	80.4037	.
+25	utg300	1	1.61571	.
+13	Scaffold_11.7	0	4090.89	.
+21	Scaffold_184.1	1	661.292	.
+34	utg4477	1	10.4161	.
+33	utg4315	1	6.26744	.
+17	Scaffold_1943.1	1	1283.82	.
+15	Scaffold_1351.1	0	508.82	.
+26	utg696	1	0.572877	.
+16	Scaffold_1351.2	0	641.229	.
+6	Scaffold_26.3	1	19.1862	.
+47	utg53905	1	0.496959	.
+41	utg8990	1	20.0303	.
+5	Scaffold_26.2	1	255.855	.
+42	utg9868	0	0.475094	.
+4	Scaffold_26.1	1	14.137	.
+40	utg8865	1	44.0491	.
+22	Scaffold_462.1	0	26.3121	.
+23	Scaffold_202.1	0	211.871	.
+18	Scaffold_274.1	1	1330.58	.
+28	utg2631	0	0.00709727	.
+30	utg2818	0	0	.
