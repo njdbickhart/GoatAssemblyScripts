@@ -99,7 +99,7 @@ unless( -e "$outPrefix.bayes.vcf"){
 	my @cmds;
 	push(@cmds, "freebayes -C 2 -0 -O -q 20 -z 0.02 -E 0 -X -u -p 1 -F 0.5 -b $inputBam -v $outPrefix.bayes.vcf -f $opts{f}");
 	push(@cmds, qq(NUM_SNP=`perl -e '$c = 0; while(<>){chomp; @F = split(/\t/); if($F[0] =~ /^#/){next;} ($ab) = $F[7] =~ /AB=(.{1,10})\;ABP/; if($ab < 0.65){next;}else{ $la = length($F[3]); $lb = length($F[4]); if($la == $lb){$c++;}elsif($la < $lb){$c += $lb - $la;}else{$c += $la - $lb;}}} print "$c\n";' < $inputBam`));
-	push(@cmds, qq(NUM_BP=`samtools depth dominette.merged.umd3.bam | perl -e '$c = 0; while(<>){chomp; @s = split(/\t/); if($s[2] >= 3){$c++;}} print "$c\n";'`));
+	push(@cmds, qq(NUM_BP=`samtools depth $inputBam | perl -e '$c = 0; while(<>){chomp; @s = split(/\t/); if($s[2] >= 3){$c++;}} print "$c\n";'`));
 	push(@cmds, qq(QV=`perl -e 'chomp(@ARGV); $ns = $ARGV[0]; $nb = $ARGV[1]; print (-10 * log($ns/$nb)/log(10)); print "\n";' $NUM_SNP $NUM_BP`));
 	push(@cmds, "echo $QV > $outPrefix.qv");
 	
