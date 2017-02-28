@@ -35,7 +35,7 @@ my $manager = SummaryManager->new('mkdwn' => 1);
 $manager->output($opts{'o'});
 
 my $filecounts = 1;
-for my ($x = 0; $x < scalar(@batches); $x++){
+for (my $x = 0; $x < scalar(@batches); $x++){
 	my $baseName = $batches[$x];
 	my $asmName = $names[$x];
 	my $frcfile = "$baseName\_Features.txt";
