@@ -44,7 +44,7 @@ for (my $x = 0; $x < scalar(@batches); $x++){
 	# Check if the files exist
 	unless( -s $frcfile && -s $lumpyfile && -s $qvfile){
 		print STDERR "Missing the required files for $baseName output basename!\n";
-		print STDERR "Please check to see if the following files are present:\n $frcfile\n$lumpy\n$qvfile\n";
+		print STDERR "Please check to see if the following files are present:\n $frcfile\n$lumpyfile\n$qvfile\n";
 		exit;
 	}
 	
@@ -77,7 +77,7 @@ for (my $x = 0; $x < scalar(@batches); $x++){
 	chomp $qv;
 	close $IN;
 	
-	$worker->set("QV" => sprintf("%.2f", $qv));
+	$worker->Set("QV" => sprintf("%.2f", $qv));
 	
 	$manager->setTable($asmName, $worker->createSumTable($asmName));
 }
